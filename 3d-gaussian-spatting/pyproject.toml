@@ -1,0 +1,13 @@
+[project]
+name = "learnx-3d-gaussian-splatting"
+version = "0.1.0"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "ipykernel",
+    "jupyterlab",
+    "matplotlib",
+    "numpy",
+    "opencv-python",
+    "pillow",
+    "torch",
+]
