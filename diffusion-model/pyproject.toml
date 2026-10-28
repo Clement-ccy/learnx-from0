@@ -1,0 +1,11 @@
+[project]
+name = "learnx-diffusion-model"
+version = "0.1.0"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "ipykernel",
+    "jupyterlab",
+    "matplotlib",
+    "numpy",
+    "torch",
+]
