@@ -13,6 +13,7 @@
 | [Diffusion Model](diffusion-model/01_forward_process.ipynb) | 给一张图逐渐加上雪花，观察噪声调度怎样改变它 | 1 篇前向扩散 |
 | [DeepSDF](deepsdf/01_SDF基础与单物体拟合.ipynb) | 学习空间中的距离，拼出表面，再为新物体寻找形状编码 | 3 篇渐进实验 |
 | [RVC](retrieval-based-voice-conversion/00_声音转换学习地图.ipynb) | 从波形、频谱、音高到声音转换，先整理一条学习路线 | 1 篇学习计划 |
+| [计算机网络](computer-network/01_计算机网络从零到实践.ipynb) | 沿一次网页访问学习分层、IP、TCP、DNS、HTTP/TLS，运行本机实验并练习排障 | 1 本完整手册，22 章 |
 | [现代控制与 MPC](modern-control/00_学习地图与小车建模.ipynb) | 用小车停靠串起 PID、状态空间、LQR、Kalman 滤波与约束 MPC，比较扰动和模型误差下的表现 | 6 篇递进实验 |
 
 每个主题的第一篇都有导航，正文和实现都在 Notebook 里。可以按顺序走，也可以带着某个问题回来看一节。
@@ -22,7 +23,7 @@
 安装 [uv](https://docs.astral.sh/uv/getting-started/installation/) 后，进入想学的主题目录：
 
 ```bash
-cd transformer  # 或 modern-control、3d-gaussian-spatting、diffusion-model、deepsdf
+cd transformer  # 或 modern-control、computer-network、3d-gaussian-spatting、diffusion-model、deepsdf
 uv sync --python 3.11.15
 uv run jupyter lab
 ```
@@ -47,6 +48,7 @@ uv run jupyter lab
 - **[德英翻译](transformer/04_德英翻译实战.ipynb)**：按篇内命令安装可选依赖和语言模型。`RUN_TRANSLATION=False` 用于阅读，改为 `True` 后准备语料并训练。
 - **[交互点云](3d-gaussian-spatting/04_交互点云与实现边界.ipynb)**：在支持 OpenCV 窗口的本机内核运行，开启 `RUN_INTERACTIVE` 后可旋转视角、观察点云颜色拟合。
 - **RVC**：目前是一页学习计划，直接阅读即可。
+- **计算机网络**：默认实验无需外网或管理员权限；UDP、TCP、HTTP 只在本机回环接口运行，书中抓包与外部诊断命令为手动选做。
 - **现代控制与 MPC**：安装依赖后全部实验离线运行，只需 CPU；六篇各自独立运行，无需下载数据或读取前篇产物。最后两篇使用 CVXPY + OSQP 求解小规模二次规划。
 
 ## 怎样用这些笔记复习
